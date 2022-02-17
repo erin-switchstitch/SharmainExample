@@ -50,5 +50,14 @@ header h2{
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  margin-bottom: 3vh;
+}
 
+.exampleThree{
+    width:50vw;
+  border: black 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }

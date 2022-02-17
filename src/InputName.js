@@ -4,18 +4,10 @@ export default function InputName(props) {
 
     const [secondaryName, setSecondaryName] = useState("");
 
-    
-    function checkPrimaryName(event){
-        console.log("Check Primary Name works !")
-        console.log(event.target.value)
+    console.log(props.alternativeText)
 
-        setSecondaryName(event.target.value);
-
-        // if (props.isPrimaryName === true){
-        //     setSecondryName("");
-        // } else {
-        //    setSecondryName(event.target.value);
-        // }
+    if ((props.alternativeText.length !== 0) &&(secondaryName !== props.alternativeText)){
+      setSecondaryName(props.alternativeText);
     }
 
 
